@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import { WithThemeProvider } from './providers';
+import { WithRouterProvider, WithThemeProvider } from 'providers';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
+    {/* MUI theming */}
     <WithThemeProvider>
-      <App />
+      {/* React-router */}
+      <WithRouterProvider />
     </WithThemeProvider>
   </React.StrictMode>,
 );

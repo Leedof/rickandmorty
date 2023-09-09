@@ -6,7 +6,7 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
       "@components/*": ["./src/components/*"]
     },
