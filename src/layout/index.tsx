@@ -1,9 +1,10 @@
 import { Outlet } from 'react-router-dom';
+import Header from './Header';
 
 const Layout: React.FunctionComponent<any> = () => {
   return (
     <>
-      <header>'Header content'</header>
+      <Header />
       <main>
         <Outlet />
       </main>
