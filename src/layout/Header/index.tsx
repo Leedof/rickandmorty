@@ -1,15 +1,16 @@
-import { Container, SvgIcon } from '@mui/material';
+import { Box, SvgIcon } from '@mui/material';
 import { flex } from 'components';
 
 const Header = () => (
-  <Container
-    maxWidth="xl"
+  <Box
     sx={{
+      px: { xs: 2, lg: 3 },
       height: { xs: '2.5rem', sm: '3.125rem', lg: '3.75rem' },
       ...flex.rowBase,
       ...flex.alignCenter,
       ...flex.justifyStart,
     }}
+    component="header"
   >
     <SvgIcon sx={{ fontSize: { xs: '1.667rem', sm: '2.08rem', lg: '2.5rem' } }}>
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -21,7 +22,7 @@ const Header = () => (
         </g>
       </svg>
     </SvgIcon>
-  </Container>
+  </Box>
 );
 
 export default Header;
