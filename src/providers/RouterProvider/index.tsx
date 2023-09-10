@@ -1,12 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from 'layout';
 
-const Test = () => {
-  return <div>MAIN</div>;
-};
-const Test2 = () => {
-  return <div>CHILD</div>;
-};
+const Test = () => <div>MAIN</div>;
+const Test2 = () => <div>CHILD</div>;
 
 const router = createBrowserRouter([
   {
@@ -25,8 +21,6 @@ const router = createBrowserRouter([
   },
 ]);
 
-const WithRouterProvider: React.FC = () => {
-  return <RouterProvider router={router} />;
-};
+const WithRouterProvider: React.FC = () => <RouterProvider router={router} />;
 
 export default WithRouterProvider;
