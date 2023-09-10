@@ -20,6 +20,33 @@ declare module '@mui/material/Typography' {
 
 // A custom theme for this app
 const theme = createTheme({
+  palette: {
+    action: {
+      disabled: 'rgba(272B33,0.6)',
+      disabledBackground: '#9E9E9E',
+    },
+    common: {
+      black: '#000000',
+      white: '#FFFFFF',
+    },
+    primary: {
+      contrastText: '#F5F5F5',
+      dark: '#202329',
+      light: '#3C3E44',
+      main: '#272B33',
+    },
+    secondary: {
+      contrastText: '#272B33',
+      dark: '#9E9E9E',
+      main: '#F5F5F5',
+    },
+    success: {
+      main: '#55CC44',
+    },
+    error: {
+      main: '#D63D2E',
+    },
+  },
   typography: {
     fontSize: 14,
     htmlFontSize: 16,
