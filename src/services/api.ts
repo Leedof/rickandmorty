@@ -31,7 +31,6 @@ const axiosBaseQuery =
     }
   };
 
-// initialize an empty api service that we'll inject endpoints into later as needed
 export const emptySplitApi = createApi({
   baseQuery: axiosBaseQuery({
     baseUrl: 'https://rickandmortyapi.com/api',

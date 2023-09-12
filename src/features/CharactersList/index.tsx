@@ -2,6 +2,7 @@
 import { Grid, SxProps, Theme, Box } from '@mui/material';
 import { PreviewCharacterCard } from './CharacterCard';
 import { apiResponse } from './mock';
+import { Pagination } from './Pagination';
 
 export const CharactersList = ({ sx }: { sx: SxProps<Theme> }) => (
   <Box sx={sx}>
@@ -11,6 +12,9 @@ export const CharactersList = ({ sx }: { sx: SxProps<Theme> }) => (
           <PreviewCharacterCard character={character} />
         </Grid>
       ))}
+      <Grid item xs={12} direction="row" justifyContent="center" alignItems="center">
+        <Pagination />
+      </Grid>
     </Grid>
   </Box>
 );
