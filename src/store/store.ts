@@ -1,12 +1,17 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { useDispatch, useSelector, TypedUseSelectorHook } from 'react-redux';
-import { counterReducer } from './slices';
+import { setupListeners } from '@reduxjs/toolkit/dist/query';
+import { characterListExtAPI } from 'services/api';
 
-const store = configureStore({
+export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    [characterListExtAPI.reducerPath]: characterListExtAPI.reducer,
   },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(characterListExtAPI.middleware),
 });
+
+// optional, but required for refetchOnFocus/refetchOnReconnect behaviors
+setupListeners(store.dispatch);
 
 export type RootState = ReturnType<typeof store.getState>;
 type AppDispatch = typeof store.dispatch;

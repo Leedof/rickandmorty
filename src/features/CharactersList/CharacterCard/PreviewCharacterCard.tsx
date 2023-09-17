@@ -2,9 +2,9 @@
 import { Box, Grid } from '@mui/material';
 import { NameAndStatus, CharacterLocation } from 'components';
 import { Link } from 'react-router-dom';
+import { Character } from 'types';
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const PreviewCharacterCard = ({ character }: any) => {
+export const PreviewCharacterCard = ({ character }: { character: Character }) => {
   const { id, name, image, status, species, location, origin } = character;
   return (
     <Grid
