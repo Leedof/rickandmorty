@@ -1,6 +1,6 @@
 import { Box, Typography, Theme } from '@mui/material';
 import { Character } from 'types';
-import { flex, text } from '../styles';
+import { flex, text } from '../../styles';
 
 const getColorPerStatus = (status: string, theme: Theme) => {
   switch (status.toLowerCase()) {

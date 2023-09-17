@@ -1,4 +1,4 @@
 export * from './styles';
 export * from './HeroBlock';
-export * from './NameAndStatus';
-export * from './CharacterLocation';
+export * from './CharacterCard';
+export * from './Pagination';

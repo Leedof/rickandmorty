@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Pagination as PaginationMUI, PaginationItem } from '@mui/material';
-import { flex } from '../../../components/styles/flex';
+import { flex } from '../styles';
 
 export const Pagination = ({ page, totalPages }: { page: number; totalPages: number }) => (
   <PaginationMUI

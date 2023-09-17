@@ -1,5 +1,5 @@
 import { Typography, Box, SxProps, Theme } from '@mui/material';
-import { text } from '../styles';
+import { text } from '../../styles';
 
 export const CharacterLocation = ({ label, location, sx }: { label: string; location: string; sx: SxProps<Theme> }) => (
   <Box sx={sx}>

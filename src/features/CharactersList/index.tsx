@@ -2,8 +2,7 @@ import { Grid, SxProps, Theme, Box, Skeleton } from '@mui/material';
 import api from 'services/api';
 import { useLocation } from 'react-router-dom';
 import { Character } from 'types';
-import { PreviewCharacterCard } from './CharacterCard';
-import { Pagination } from './Pagination';
+import { Pagination, PreviewCharacterCard } from 'components';
 
 const SKELETON_ARR = [1, 2, 3, 4, 5, 6];
 

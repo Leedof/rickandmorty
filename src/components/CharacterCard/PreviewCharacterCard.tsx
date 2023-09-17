@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { Box, Grid } from '@mui/material';
-import { NameAndStatus, CharacterLocation } from 'components';
 import { Link } from 'react-router-dom';
 import { Character } from 'types';
+import { NameAndStatus } from './NameAndStatus';
+import { CharacterLocation } from './CharacterLocation';
 
 export const PreviewCharacterCard = ({ character }: { character: Character }) => {
   const { id, name, image, status, species, location, origin } = character;
