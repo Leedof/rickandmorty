@@ -1,7 +1,8 @@
 import { Box, Typography, Theme } from '@mui/material';
+import { Character } from 'types';
 import { flex, text } from '../styles';
 
-const getColorPerStatus = (status: 'alive' | 'dead' | 'unknown', theme: Theme) => {
+const getColorPerStatus = (status: string, theme: Theme) => {
   switch (status.toLowerCase()) {
     case 'alive':
       return theme.palette.success.main;
@@ -14,15 +15,7 @@ const getColorPerStatus = (status: 'alive' | 'dead' | 'unknown', theme: Theme) =
   }
 };
 
-export const NameAndStatus = ({
-  name,
-  status,
-  species,
-}: {
-  name: string;
-  status: 'alive' | 'dead' | 'unknown';
-  species: string;
-}) => (
+export const NameAndStatus = ({ name, status, species }: Pick<Character, 'name' | 'status' | 'species'>) => (
   <Box>
     <Typography variant="h3" component="h3" color="secondary" sx={text.overflowText}>
       {name}
