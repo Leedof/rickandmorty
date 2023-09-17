@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Box, Grid } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { Character } from 'types';
@@ -21,7 +20,7 @@ export const PreviewCharacterCard = ({ character }: { character: Character }) =>
         },
       }}
       component={Link}
-      to={`/character/${id}`}
+      to={`/character?id=${id}`}
     >
       <Grid item xs={4.6}>
         <Box sx={{ background: `url(${image}) center / cover no-repeat`, width: '100%', height: '100%' }} />

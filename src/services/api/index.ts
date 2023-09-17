@@ -1,8 +1,9 @@
-import { useListCharacterQuery } from './characterList';
+import { useListCharacterQuery,useCharacterQuery } from './characters';
 
-export { characterListExtAPI } from './characterList';
+export { characterListExtAPI } from './characters';
 const api = {
   useListCharacterQuery,
+  useCharacterQuery
 };
 
 export default api;

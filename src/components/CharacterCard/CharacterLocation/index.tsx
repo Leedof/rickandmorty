@@ -9,7 +9,7 @@ export const CharacterLocation = ({ label, location, sx }: { label: string; loca
     <Typography
       align="left"
       sx={(theme) => ({
-        color: theme.palette.common.white,
+        color: theme.palette.secondary.main,
         ...text.overflowText,
       })}
     >

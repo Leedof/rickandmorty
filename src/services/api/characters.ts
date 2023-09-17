@@ -6,8 +6,11 @@ export const characterListExtAPI = emptySplitApi.injectEndpoints({
     listCharacter: builder.query<Info<Character[]>, number | void>({
       query: (page = 1) => ({ url: `/character/?page=${page}`, method: 'get' }),
     }),
+    character: builder.query<Character,number|void>({
+      query:(id) => ({ url: `/character/${id}`, method: 'get' })
+    })
   }),
   overrideExisting: false,
 });
 
-export const { useListCharacterQuery } = characterListExtAPI;
+export const { useListCharacterQuery,useCharacterQuery } = characterListExtAPI;

@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from 'layout';
-import { CharacterInfo, Home } from 'pages';
+import { Character, Home } from 'pages';
 
 const router = createBrowserRouter([
   {
@@ -12,8 +12,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: `character/:id`,
-        element: <CharacterInfo />,
+        path: `character`,
+        element: <Character />,
       },
     ],
   },
