@@ -12,7 +12,7 @@ export const CharactersList = ({ sx }: { sx: SxProps<Theme> }) => (
           <PreviewCharacterCard character={character} />
         </Grid>
       ))}
-      <Grid item xs={12} direction="row" justifyContent="center" alignItems="center">
+      <Grid item xs={12}>
         <Pagination />
       </Grid>
     </Grid>

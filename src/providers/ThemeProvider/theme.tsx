@@ -22,7 +22,7 @@ declare module '@mui/material/Typography' {
 const theme = createTheme({
   palette: {
     action: {
-      disabled: 'rgba(272B33,0.6)',
+      disabled: 'rgba(39,43,51,0.6)',
       disabledBackground: '#9E9E9E',
     },
     common: {
